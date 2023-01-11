@@ -8,7 +8,7 @@ const Home = () => {
     <SContainer
       onClick={() => (mode === "sun" ? setMode("moon") : setMode("sun"))}
     >
-      click
+      HELLO
     </SContainer>
   );
 };

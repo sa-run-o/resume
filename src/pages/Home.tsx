@@ -1,22 +1,13 @@
-import { useContext } from "react";
 import styled from "styled-components";
-import { ModeContext } from "../contexts/theme";
-import ToggleSwitch from "../components/ToggleSwitch";
 
 const Home = () => {
-  const { mode, setMode } = useContext(ModeContext);
-  return (
-    <SContainer>
-      <ToggleSwitch
-        value={mode}
-        isOn="sun"
-        isOff="moon"
-        onToggleSwitch={setMode}
-      />
-    </SContainer>
-  );
+  return <SContainer>hello</SContainer>;
 };
 export default Home;
 const SContainer = styled.div`
+  height: 100vh;
   background-color: ${({ theme }) => theme.main};
+  color: ${({ theme }) => theme.sub};
+  width: 100%;
+  overflow-y: scroll;
 `;

@@ -13,7 +13,9 @@ const ToggleSwitch = ({
   onToggleSwitch,
 }: IToggleSwitch) => {
   const toggleSwitch = () => {
-    onToggleSwitch(value === isOn ? isOff : isOn);
+    const result = value === isOn ? isOff : isOn;
+    localStorage.setItem("mode", result);
+    onToggleSwitch(result);
   };
   return (
     <SSwitch className={value === isOn ? "isOn" : ""} onClick={toggleSwitch}>
@@ -33,8 +35,10 @@ const SSwitch = styled.div`
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   border-radius: 50px;
-  padding: 10px;
+  padding: 0px 5px;
+  height: 100%;
   cursor: pointer;
   &.isOn {
     justify-content: flex-end;
@@ -42,8 +46,8 @@ const SSwitch = styled.div`
 `;
 
 const SHandle = styled(motion.div)`
-  width: 80px;
-  height: 80px;
+  width: 50%;
+  height: 80%;
   background-color: rgba(229, 204, 175, 1);
   border-radius: 40px;
   &.isOn {

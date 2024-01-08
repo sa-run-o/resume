@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-hook-typescript-ghpage-starter/static/css/main.0bd4a433.css",
+    "main.js": "/react-hook-typescript-ghpage-starter/static/js/main.83cec5bf.js",
+    "static/js/787.8a6b0d27.chunk.js": "/react-hook-typescript-ghpage-starter/static/js/787.8a6b0d27.chunk.js",
+    "index.html": "/react-hook-typescript-ghpage-starter/index.html",
+    "main.0bd4a433.css.map": "/react-hook-typescript-ghpage-starter/static/css/main.0bd4a433.css.map",
+    "main.83cec5bf.js.map": "/react-hook-typescript-ghpage-starter/static/js/main.83cec5bf.js.map",
+    "787.8a6b0d27.chunk.js.map": "/react-hook-typescript-ghpage-starter/static/js/787.8a6b0d27.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bd4a433.css",
+    "static/js/main.83cec5bf.js"
+  ]
+}

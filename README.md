@@ -6,6 +6,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `gh-page`
+
+1.  Install package for gh: npm install gh-pages
+2.  In package.json set 'homepage' with https://{username}.github.io/{repo_name}
+    Example: https://sa-run-o.github.io/react-hook-typescript-ghpage-starter
+3.  Add script in 'script'
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+4.  Run command: npm run deploy
+5.  Config github: setting > pages -> select 'branch' to 'gh-pages'
+6.  Check your link deploy: https://{username}.github.io/{repo-name}
+    Example: https://sa-run-o.github.io/react-hook-typescript-ghpage-starter
+
 ### `npm start`
 
 Runs the app in the development mode.\

@@ -14,7 +14,7 @@ In the project directory, you can run:
 3.  Add script in 'script'
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-4.  Run command: npm run deploy
+4.  Run command for deploy: npm run deploy
 5.  Config github: setting > pages -> select 'branch' to 'gh-pages'
 6.  Check your link deploy: https://{username}.github.io/{repo-name}
     Example: https://sa-run-o.github.io/react-hook-typescript-ghpage-starter
